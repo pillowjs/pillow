@@ -1,0 +1,8 @@
+**/.*
+**/node_modules
+**/dist
+**/_dist
+**/assets
+BinaryHeap.js
+AStar.js
+examples/diamond

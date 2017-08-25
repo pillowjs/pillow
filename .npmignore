@@ -1,0 +1,12 @@
+.travis.yml
+test/
+docs/
+Makefile
+.jshintrc
+.jshintignore
+coverage/
+*.html
+*.sw*
+*.un~
+src/
+examples/

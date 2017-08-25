@@ -1,0 +1,52 @@
+{
+  "name": "pillowjs",
+  "version": "1.1.29",
+  "description": "HTML5 2D rendering engine",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pillowjs/pillow.git"
+  },
+  "keywords": [
+    "canvas"
+  ],
+  "main": "./dist/index.js",
+  "homepage": "https://pillowjs.github.com/pillow",
+  "precommit": [
+    "lint"
+  ],
+  "scripts": {
+    "lint": "eslint ./src ./examples",
+    "doc": "rm -rf ./docs/ && jsdoc -c ./jsdoc.json",
+    "build": "webpack -p && babel src/ --out-dir dist/",
+    "server": "startserver -p 8081 -s -m",
+    "test": "node ./test/pillow.test.js",
+    "update": "node ./scripts/update.js",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "monitor.js": "^1.0.5"
+  },
+  "devDependencies": {
+    "babel": "~5.8.23",
+    "babel-core": "^5.x",
+    "babel-loader": "^5.x",
+    "eslint": "^4.0.0",
+    "jsdoc": "3.4.0",
+    "json-loader": "^0.5.2",
+    "jsx-loader": "^0.13.2",
+    "mocha": "^3.4.2",
+    "node-libs-browser": "^2.0.0",
+    "pre-commit": "^1.2.2",
+    "should": "*",
+    "startserver": "^1.3.7",
+    "startserver-webpack": "^1.0.2",
+    "uitest": "^1.1.4",
+    "webpack": "^2.6.1"
+  },
+  "startserver": [
+    {
+      "startserver-webpack": "*"
+    }
+  ],
+  "license": "MIT"
+}

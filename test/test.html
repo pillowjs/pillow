@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>macaca mocha test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+    <script src="../build/pillow.js"></script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src='../node_modules/uitest/uitest-mocha-shim.js'></script>
+    <script src="../node_modules/should/should.js"></script>
+    <script>
+    _macaca_uitest.setup({
+      ui: 'bdd',
+      timeout: 5000,
+      slow: 2000
+    });
+    </script>
+    <script>
+    describe('sample', function() {
+      it('Constructor should be ok', function() {
+        pillow.should.be.ok();
+      });
+    });
+    </script>
+    <script>
+    _macaca_uitest.run();
+    </script>
+  </body>
+</html>
