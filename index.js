@@ -29,7 +29,7 @@ getJSON(`./list.json?t=${+Date}`, function(data) {
 
   if (container) {
     list.forEach(item => {
-      var href = `${location.protocol}//${location.host}/pillow-samples/${item}`;
+      var href = `${location.protocol}//${location.host}/pillow-sample/${item}`;
       var a = document.createElement('a');
       a.innerHTML = item;
       var li = document.createElement('li');
@@ -46,7 +46,7 @@ getJSON(`./list.json?t=${+Date}`, function(data) {
 
   if (app) {
     list.forEach(item => {
-      var href = `/pillow-samples/${item}`;
+      var href = `/pillow-sample/${item}`;
       var div = document.createElement('div');
       var iframe = document.createElement('iframe');
       iframe.src = href;
