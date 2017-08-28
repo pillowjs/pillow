@@ -46,7 +46,7 @@ getJSON(`./list.json?t=${+Date}`, function(data) {
 
   if (app) {
     list.forEach(item => {
-      var href = `./examples/${item}`;
+      var href = `./pillow-samples/${item}`;
       var div = document.createElement('div');
       var iframe = document.createElement('iframe');
       iframe.src = href;
