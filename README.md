@@ -28,8 +28,8 @@ $ npm i pillowjs --save
 ## Examples
 
 - [online examples](//pillowjs.github.io/pillow)
-- [online show](//pillowjs.github.io/pillow/show.htm)
-- [online slide](//pillowjs.github.io/slide/archives/pillow/)
+- [online show](//pillowjs.github.io/pillow/show.html)
+- [online slide](//xudafeng.github.io/slide/archives/pillow/)
 
 ## Documents
 
